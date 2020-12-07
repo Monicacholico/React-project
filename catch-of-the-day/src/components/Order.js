@@ -16,6 +16,7 @@ class Order extends React.Component {
         return <li key={key}>
         {count} libs {fish.name}
         {formatPrice(count * fish.price)}
+        <button onClick={() => this.props.deleteOrder(key)}>&times;</button>
         </li>
     }
     render() {
@@ -41,7 +42,7 @@ class Order extends React.Component {
                     Total:
                     {formatPrice(total)}
                     </strong>
-                </div>
+                </div> 
             </div>
         )
     }
