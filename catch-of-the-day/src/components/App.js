@@ -5,12 +5,18 @@ import Inventory from "./Inventory";
 import Fish from "./Fish";
 import sampleFishes from "../sample-fishes"
 import base from '../base';
+import PropTypes from 'prop-types';
+
 
 class App extends React.Component {
     state = {
         fishes: {},
         order: {}
     };
+
+    static propTypes = {
+        match: PropTypes.object
+    }
 
     componentDidMount() {
         const { params } = this.props.match;
@@ -102,10 +108,10 @@ class App extends React.Component {
                         ))}
                     </ul>
                 </div>
-                <Order 
-                fishes={this.state.fishes} 
-                order={this.state.order} 
-                deleteOrder={this.deleteOrder}    
+                <Order
+                fishes={this.state.fishes}
+                order={this.state.order}
+                deleteOrder={this.deleteOrder}
                 />
                 <Inventory
                 addFish={this.addFish}
