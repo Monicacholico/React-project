@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Header from "./Header";
 import Order from "./Order";
 import Inventory from "./Inventory";
 import Fish from "./Fish";
 import sampleFishes from "../sample-fishes"
 import base from '../base';
-import PropTypes from 'prop-types';
 
 
 class App extends React.Component {
@@ -16,6 +16,7 @@ class App extends React.Component {
 
     static propTypes = {
         match: PropTypes.object
+
     }
 
     componentDidMount() {
@@ -91,9 +92,7 @@ class App extends React.Component {
         this.setState({order});
     }
     render() {
-
         return (
-
             <div className="catch-of-the-day">
                 <div className="menu">
                     <Header tagline="Fresh Seafood Market"/>
@@ -118,7 +117,10 @@ class App extends React.Component {
                 updateFish={this.updateFish}
                 deleteFish={this.deleteFish}
                 loadSampleFishes={this.loadSampleFishes}
-                fishes={this.state.fishes}/>
+                fishes={this.state.fishes}
+                storeId={this.props.match.params.storeId}
+                />
+
             </div>
         )
     }
