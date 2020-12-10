@@ -21,7 +21,6 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "start": "serve --single ./build",
     "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
     "build": "react-scripts build serve --single ./build",
     "homepage": "https://github.com/Monicacholico/React-project",
