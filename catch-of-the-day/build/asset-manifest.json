@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f18463bd.chunk.css",
+    "main.js": "/static/js/main.33cb7fa1.chunk.js",
+    "main.js.map": "/static/js/main.33cb7fa1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.76b6e058.js",
+    "runtime-main.js.map": "/static/js/runtime-main.76b6e058.js.map",
+    "static/js/2.e977835c.chunk.js": "/static/js/2.e977835c.chunk.js",
+    "static/js/2.e977835c.chunk.js.map": "/static/js/2.e977835c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.fa6bdd7bc22d2580b0116288adedad4c.js": "/precache-manifest.fa6bdd7bc22d2580b0116288adedad4c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f18463bd.chunk.css.map": "/static/css/main.f18463bd.chunk.css.map",
+    "static/js/2.e977835c.chunk.js.LICENSE.txt": "/static/js/2.e977835c.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/static/media/haymaker-webfont.e9535f20.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76b6e058.js",
+    "static/js/2.e977835c.chunk.js",
+    "static/css/main.f18463bd.chunk.css",
+    "static/js/main.33cb7fa1.chunk.js"
+  ]
+}
